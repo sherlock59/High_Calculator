@@ -15,7 +15,7 @@ public abstract class Calculator implements BasicMath {
 	
 	public void clear() {
 		current = 0.0;
-		System.out.println("C :" + this.current);
+		System.out.println("Calculator reset:" + this.current);
 	}
 	
 	/*
@@ -23,9 +23,10 @@ public abstract class Calculator implements BasicMath {
 	 */
 	@Override
 	public void add(double input) {
+		System.out.println("Testings Add:");
 		System.out.print(this.current + " + " + input + " = ");
 		this.current = this.current + input;
-		System.out.println(this.current);
+		//System.out.println(this.current);
 	}
 	
 	@Override
@@ -35,19 +36,18 @@ public abstract class Calculator implements BasicMath {
 		System.out.println(this.current);
 	}
 	
+	@Override
+	public void multiply(double input) {
+		System.out.print(this.current + "*" + input + " = ");
+		this.current = this.current * input;
+		System.out.println(this.current);
+	}
 	
 	@Override
 	public void divide(double input) {
-		System.out.print(this.current + " * " + input + "=");
-		this.current = this.current * input;
+		System.out.print(this.current + " / " + input + " = ");
+		this.current = this.current / input;
 		System.out.println(this.current);
 	}
 	
-	@Override
-	public void multiply(double input) {
-		System.out.print(this.current + "*" + input + "=");
-		this.current = this.current * input;
-		System.out.println(this.current);
-	}
-
 }

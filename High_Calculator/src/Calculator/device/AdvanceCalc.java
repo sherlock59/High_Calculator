@@ -5,10 +5,7 @@
  * @version 4.2
  * @since 2022.04.27
  */
-
 package Calculator.device;
-
-import Calculator.device.*;
 
 import java.lang.Math;
 
