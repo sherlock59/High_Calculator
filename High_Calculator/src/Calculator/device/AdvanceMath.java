@@ -14,7 +14,7 @@ public interface AdvanceMath {
 	/*
 	 * power of method from parent advanced Calc class
 	 */
-	void pow(double inpout);
+	void pow(double input);
 	
 	/*
 	 * Square root of method from parent advanced Calc class

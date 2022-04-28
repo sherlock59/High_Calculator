@@ -22,6 +22,21 @@ public abstract class Calculator implements BasicMath {
 	 * Override methods below for +,-,/, and * 
 	 */
 	@Override
+	public void add(double input) {
+		System.out.print(this.current + " + " + input + " = ");
+		this.current = this.current + input;
+		System.out.println(this.current);
+	}
+	
+	@Override
+	public void subtract(double input) {
+		System.out.println(this.current + " - " + input + " = ");
+		this.current = this.current - input;
+		System.out.println(this.current);
+	}
+	
+	
+	@Override
 	public void divide(double input) {
 		System.out.print(this.current + " * " + input + "=");
 		this.current = this.current * input;
