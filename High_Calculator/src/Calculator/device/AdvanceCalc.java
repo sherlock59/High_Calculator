@@ -25,5 +25,11 @@ public class AdvanceCalc extends StandardCalc implements AdvanceMath {
 		this.current = (Math.pow(this.current,  input));
 		System.out.println(this.current);
 	}
+	
+	@Override
+	public void sqrt() {
+		System.out.print(this.current + " \u221A ");
+		
+	}
 
 }
