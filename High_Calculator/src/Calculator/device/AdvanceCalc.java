@@ -17,7 +17,7 @@ public class AdvanceCalc extends StandardCalc implements AdvanceMath {
 	public AdvanceCalc() {}
 	
 	/*
-	 * Overrides power for method from the interface 
+	 * Overrides power and sqrt for method from the interfaces below
 	 */
 	@Override
 	public void pow(double input) {
@@ -29,7 +29,8 @@ public class AdvanceCalc extends StandardCalc implements AdvanceMath {
 	@Override
 	public void sqrt() {
 		System.out.print(this.current + " \u221A ");
-		
+		this.current = (Math.sqrt(this.current));
+		System.out.println(this.current);	
 	}
 
 }
