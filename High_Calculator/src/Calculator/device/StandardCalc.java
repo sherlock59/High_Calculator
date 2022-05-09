@@ -7,8 +7,11 @@
  */
 package Calculator.device;
 
-public class StandardCalc extends Calculator {
-	
+public class StandardCalc extends Calculator {@Override
+public void add(double input) {
+	// TODO Auto-generated method stub
+	super.add(input);
+}
 	protected double memory = 0.0;
 
 

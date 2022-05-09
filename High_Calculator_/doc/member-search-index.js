@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"calculator.device","c":"BasicMath","l":"add(double)"},{"p":"calculator.device","c":"BasicMath","l":"divide(double)"},{"p":"calculator.device","c":"BasicMath","l":"multiply(double)"},{"p":"calculator.device","c":"BasicMath","l":"subtract(double)"}];updateSearchResults();

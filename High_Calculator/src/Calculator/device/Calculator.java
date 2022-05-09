@@ -8,10 +8,12 @@
 package Calculator.device;
 
 public abstract class Calculator implements BasicMath {
+
 	
 	protected double current = 0.0;
 	
 	public Calculator() {}
+	
 	
 	public void clear() {
 		current = 0.0;
@@ -23,17 +25,21 @@ public abstract class Calculator implements BasicMath {
 	 */
 	@Override
 	public void add(double input) {
+		System.out.println("---------------------------------------");
+		System.out.println("Welcome to Advanced Calculator");
+		System.out.println("---------------------------------------");
 		System.out.println("Testings Add:");
-		System.out.print(this.current + " + " + input + " = ");
+		System.out.print("   " + this.current + " + " + input + " = ");
 		this.current = this.current + input;
-		//System.out.println(this.current);
+		System.out.println(this.current + " \n ");
 	}
 	
 	@Override
 	public void subtract(double input) {
-		System.out.println(this.current + " - " + input + " = ");
+		System.out.println("Testing Subtract:");
+		System.out.print("   " + this.current + " - " + input + " = ");
 		this.current = this.current - input;
-		System.out.println(this.current);
+		System.out.println(this.current + " \n ");
 	}
 	
 	@Override
