@@ -17,14 +17,13 @@ public class StandartCalc extends Calculator {
 	/*
 	 * The default constructor is used to handle housekeeping items.
 	 */
-	public StandartCalc() {
-	}
+	public StandartCalc() {}
 
 	/*
 	 * Sets the memory value to zero.
 	 */
 	public void memoryClear() {
-		memoryVal = 0.0;
+		this.memoryVal = 0.0;
 		System.out.println("Memory Clear: " + this.memoryVal);
 	}
 
@@ -51,7 +50,7 @@ public class StandartCalc extends Calculator {
 	 */
 	public double memoryRecall() {
 		System.out.println("Testing Memory Recall: " + this.memoryVal);
-		return memoryVal;
+		return this.memoryVal;
 	}
 
 }

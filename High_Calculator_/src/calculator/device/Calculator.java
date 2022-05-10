@@ -10,65 +10,67 @@ package calculator.device;
  */
 public abstract class Calculator implements BasicMath {
 
-	/**
-	 * initial current zero
-	 */
-	protected double currentVal = 0.0;
+
 
 	/**
-	 * default constructor 
+	 * The calculator's current value
+	 */
+	 double currentVal;
+
+	/**
+	 * This constructor handles housekeeping items
 	 */
 	public Calculator() {
 	}
 
 	/**
-	 * setting initial zero into zero with reset if has different digits
+	 * Resets the calculator current value back to zero
 	 */
 	public void clear() {
-		currentVal = 0.0;
+		this.currentVal = 0.0;
 		System.out.println("Calculator Clear: " + this.currentVal);
 	}
 
 	/**
-	 * adding method
+	 * Adds the user's input to the current value. 
 	 */
 	@Override
 	public void add(double inputVal) {
 		System.out.println("Testing add:  ");
 		System.out.print(this.currentVal + " + " + inputVal + " = ");
-		this.currentVal = this.currentVal + inputVal;
+		this.currentVal += inputVal;
 		System.out.println(this.currentVal);
 	}
 
 	/**
-	 * subtract method
+	 * Subtracts the user's input to the current value.
 	 */
 	@Override
 	public void subtract(double inputVal) {
 		System.out.println("Testing subtract:  ");
 		System.out.print(this.currentVal + " - " + inputVal + " = ");
-		this.currentVal = this.currentVal - inputVal;
+		this.currentVal -= inputVal;
 		System.out.println(this.currentVal);
 
 	}
 
 	/**
-	 *multiple method displayed
+	 * Multiplies the user's input to the current value
 	 */
 	@Override
 	public void multiply(double inputVal) {
 		System.out.print(this.currentVal + " * " + inputVal + " = ");
-		this.currentVal = this.currentVal * inputVal;
+		this.currentVal *= inputVal;
 		System.out.println(this.currentVal);
 	}
 
 	/**
-	 * division method 
+	 * Divides the user's input to the current value 
 	 */
 	@Override
 	public void divide(double inputVal) {
 		System.out.print(this.currentVal + " / " + inputVal + " = ");
-		this.currentVal = this.currentVal / inputVal;
+		this.currentVal /= inputVal;
 		System.out.println(this.currentVal);
 	}
 
