@@ -17,8 +17,7 @@ public class AdvanceCalc extends StandartCalc implements AdvanceMath {
 	/*
 	 * The default constructor is used to handle housekeeping items.
 	 */
-	public AdvanceCalc() {
-	}
+	public AdvanceCalc() {}
 
 	/*
 	 * Overrides the power of method from the interface.

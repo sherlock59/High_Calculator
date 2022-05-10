@@ -10,8 +10,6 @@ package calculator.device;
  */
 public abstract class Calculator implements BasicMath {
 
-
-
 	/**
 	 * The calculator's current value
 	 */
@@ -20,8 +18,7 @@ public abstract class Calculator implements BasicMath {
 	/**
 	 * This constructor handles housekeeping items
 	 */
-	public Calculator() {
-	}
+	public Calculator() {}
 
 	/**
 	 * Resets the calculator current value back to zero
