@@ -1,7 +1,8 @@
 package calculator.device;
 
 /**
- * This class writes +,-,*,\ functions to the system 
+ * This class that implements interface logic for add, subtract,
+ * multiple, and divide functions 
  * 
  * @author Anaberdi Meredov
  * @version 2.2
@@ -10,25 +11,25 @@ package calculator.device;
 public interface BasicMath {
 
 	/**
-	 * plus fucntion
+	 * Adds the user's input to the current value
 	 * @param inputVal
 	 */
 	void add(double inputVal);
 
 	/**
-	 * minus function 
+	 * Subtracts the user's input to the current value 
 	 * @param input
 	 */
 	void subtract(double inputVal);
 
 	/**
-	 * multiplication function 
+	 * Multiplies the user's input to the current value
 	 * @param inputVal
 	 */
 	void multiply(double inputVal);
 
 	/**
-	 * division function 
+	 * divides the user's input to the current value 
 	 * @param inputVal
 	 */
 	void divide(double inputVal);

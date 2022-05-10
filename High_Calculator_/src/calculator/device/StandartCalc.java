@@ -8,12 +8,12 @@ package calculator.device;
  * @since 09/05/22
  */
 public class StandartCalc extends Calculator {
-
+	
 	/**
-	 * initializing memoryVal into zero 
+	 * initializing memoryVal 
 	 */
-	protected double memoryVal = 0.0;
-
+	protected double memoryVal;
+	
 	/*
 	 * The default constructor is used to handle housekeeping items.
 	 */
@@ -42,15 +42,16 @@ public class StandartCalc extends Calculator {
 	 */
 	public void memorySubtract() {
 		System.out.print("Memory Subtract: ");
-		this.memoryVal = this.memoryVal - this.currentVal;
+		this.memoryVal -= this.currentVal;
 	    System.out.println(this.memoryVal);
 	}
 
 	/*
 	 * Displays the value that is stored in memory.
 	 */
-	public void memoryRecall() {
+	public double memoryRecall() {
 		System.out.println("Testing Memory Recall: " + this.memoryVal);
+		return memoryVal;
 	}
 
 }

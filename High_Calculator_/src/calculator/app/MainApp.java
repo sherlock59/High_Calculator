@@ -15,22 +15,22 @@ public class MainApp {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		AdvanceCalc Calc = new AdvanceCalc();
+		AdvanceCalc calc = new AdvanceCalc();
 
 		/*
 		 * All the methods are tested here with numbers to make sure the calculator
 		 * works properly.
 		 */
-		Calc.add(10);
-		Calc.subtract(2);
-		Calc.memoryAdd();
-		Calc.multiply(10);
-		Calc.memorySubtract();
-		Calc.divide(2);
-		Calc.memoryRecall();
-		Calc.memoryClear();
-		Calc.pow(3);
-		Calc.sqrt();
-		Calc.clear();
+		calc.add(10);
+		calc.subtract(2);
+		calc.memoryAdd();
+		calc.multiply(10);
+		calc.memorySubtract();
+		calc.divide(2);
+		calc.memoryRecall();
+		calc.memoryClear();
+		calc.pow(3);
+		calc.sqrt();
+		calc.clear();
 	}
 }
